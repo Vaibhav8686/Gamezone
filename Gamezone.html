@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Zone</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #0d1117;
+            color: #fff;
+        }
+
+        header {
+            background: #111827;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            color: #00ff99;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            color: #00ff99;
+        }
+
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+                url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #00ff99;
+            color: #000;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .games {
+            padding: 70px 8%;
+        }
+
+        .games h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 40px;
+        }
+
+        .card-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: .4s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 15px;
+        }
+
+        .card p {
+            padding: 0 15px 20px;
+            color: #ccc;
+        }
+
+        .play-btn {
+            display: block;
+            margin: 15px;
+            background: #00ff99;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111827;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Gaming Zone</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Games</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome To Gaming Zone</h1>
+        <p>Play the Best Online Games</p>
+        <a href="#games" class="btn">Play Now</a>
+    </section>
+
+    <section class="games" id="games">
+
+
+
+        <h2>Popular Games</h2>
+
+        <div class="card-box">
+
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/58/6e/d0/586ed09a9d6d126b78c072385c0ee06f.jpg">
+                <h3>Free Fire</h3>
+                <p>Battle Royale Game</p>
+          <a href="https://ff.garena.com/" target="_blank" class="play-btn">Play</a>
+
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/51/6a/74/516a74d6d701c86c007f668d7cf2891a.jpg">
+                <h3>PUBG</h3>
+                <p>Action Shooting Game</p>
+                <a href="https://www.pubg.com/" target="_blank" class="play-btn">Play</a>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/57/16/63/5716634368d924bbe7fa4340c20e257b.jpg">
+                <h3>Minecraft</h3>
+                <p>Adventure Sandbox Game</p>
+                <a href="https://www.minecraft.net/" target="_blank" class="play-btn">Play</a>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/57/16/63/5716634368d924bbe7fa4340c20e257b.jpg">
+                <h3>Minecraft</h3>
+                <p>Adventure Sandbox Game</p>
+                <a href="https://www.minecraft.net/" target="_blank" class="play-btn">Play</a>
+            </div>
+
+
+        </div class="card">
+        <img src="" </section>
+
+
+
+        <footer>
+            © 2026 Gaming Zone
+        </footer>
+
+</body>
+
+</html>
